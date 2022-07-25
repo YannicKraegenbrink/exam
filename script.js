@@ -1,9 +1,19 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function burgerToggle() {
-  var x = document.getElementById("Links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+  var links = document.getElementById("links");
+  if ((links.style.display = "block")) {
+    links.style.display = "none";
+  } else if ((links.style.display = "none")) {
+    links.style.display = "block";
   }
+  console.log(links.style.display);
+}
+
+function loader() {
+  var loader = document.getElementById("loader");
+  loader.style.display = "block";
+  console.log(loader.style.display);
+  setTimeout(function () {
+    loader.style.display = "none";
+    console.log(loader.style.display);
+  }, 1600);
 }

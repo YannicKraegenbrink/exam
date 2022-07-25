@@ -4,10 +4,27 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     color: black;
+    scroll-behavior: smooth;
 }
 
-body html {
-    height: 100%;
+#loader {
+   width: 100%;
+   height: 100%;
+   display: none;
+   position: fixed;
+   background-color: white;
+}
+
+#icon {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:10rem;
+}
+
+#loader-icon {
+    width: 250px;
+    height: 250px;
 }
 
 #nav {
@@ -18,8 +35,7 @@ body html {
     position: fixed;
     width: 100%;
   }
-  
-  /* Style the links inside the navigation bar */
+
 #nav a {
     float: right;
     color: #f2f2f2;
@@ -29,18 +45,18 @@ body html {
     font-size: 17px;
   }
   
-  /* Change the color of links on hover */
+
 #nav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Add a color to the active/current link */
+
 #nav a.active {
     color: white;
   }
 
-/* Style the navigation menu */
+
 #sidenav {
     overflow: hidden;
     position: fixed;
@@ -50,12 +66,13 @@ body html {
     width: 100%;
   }
   
-  /* Hide the links inside the navigation menu (except for logo/home) */
+
   #sidenav #links {
-    display: none;
+    display: block;
+    color: black;
   }
   
-  /* Style navigation menu links */
+
   #sidenav a {
     color: white;
     padding: 14px 16px;
@@ -75,6 +92,22 @@ body html {
     color:white;
   }
 
+  #banner {
+  background-image: url("https://picsum.photos/1920/1080");
+
+  min-height: 30rem;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
   @media screen and (max-width:720px) {
        #nav {
         display: none;
@@ -82,6 +115,9 @@ body html {
        #sidenav {
         display: block;
        }
+       .banner {
+        background-attachment: scroll;
+      }
     }
 
     @media screen and (min-width:720px) {

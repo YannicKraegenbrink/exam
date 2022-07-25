@@ -7,9 +7,18 @@
         <link rel="stylesheet" href="index.css">
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/750afd4217.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
         <title>exam</title>
     </head>
     <body>
+        <div id="loader">
+            <div id="icon">
+            <lord-icon id="loader-icon"
+                src="https://cdn.lordicon.com/ggqtvqxi.json"
+                trigger="hover">
+            </lord-icon>
+            </div>
+        </div>
         <!--Topnav-->
         <div id="nav">
             <a href="Home">home</a>
@@ -17,15 +26,20 @@
             <a href="Contact">contact</a>
         </div>
         <!--Sidenav-->
-        <div id="sidenav">
-            <a class="icon" onclick="burgerToggle()">
+        <div id="sidenav" onclick="burgerToggle()">
+            <a class="icon">
                 <i class="fa-solid fa-bars fa-inverse"></i>
             </a>
             <div id="links">
                 <a href="#news">home</a>
                 <a href="#about">about</a>
                 <a href="#contact">contact</a>
-                </div>
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src="logo" alt="logo">
+            <a href="#contact" onclick="loader()">Buchen</a>
         </div>
     </body>
 </html>
