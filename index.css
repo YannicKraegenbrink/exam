@@ -7,18 +7,11 @@
     scroll-behavior: smooth;
 }
 
-#loader {
-   width: 100%;
-   height: 100%;
-   display: none;
-   position: fixed;
-   background-color: white;
-}
-
 #button {
     width: 8rem;
     height: 3rem;
-    background-image: linear-gradient(40deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-color: #74EBD5;
+    background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
 
     display: flex;
     align-items: center;
@@ -26,16 +19,14 @@
     border-radius: 0.5rem;
 }
 
+#button:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
 #text-big {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
-}
-
-#loader-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #nav {
@@ -64,8 +55,7 @@
   
 
 #nav a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #74EBD5;
   }
   
 
@@ -98,7 +88,7 @@
   
   /* Add a grey background color on mouse-over */
   #sidenav a:hover {
-    color: #FF69B4;
+    color: #74EBD5;
   }
 
   #sidenav #icon {
@@ -151,21 +141,38 @@
   width: 25rem;
   height: 30rem;
   border-radius: 0.5rem;
-  background-image: linear-gradient(40deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-color: #74EBD5;
+  background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
 }
 
 .date:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
+.date>h2 {
+  padding: 2rem;
+  padding-left: 0;
+  text-align: left;
+  color: white;
+}
+
+.date>p {
+  height: 5rem;
+  text-align: left;
+  color: white;
+}
+
 .date>ul {
   padding:1rem;
+  padding-left: 0;
+  text-align: left;
 }
 
 .date>ul>li {
   font-size: larger;
   list-style-type: none;
   padding: 0.5rem;
+  color: white;
 }
 
   @media screen and (max-width:720px) {
@@ -177,6 +184,9 @@
        }
        .banner {
         background-attachment: scroll;
+      }
+      #calendar {
+        flex-direction: column;
       }
     }
 

@@ -15,8 +15,11 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("nav").style.backgroundImage =
-      "linear-gradient(40deg, #8EC5FC 0%, #E0C3FC 100%)";
+      "linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%)";
+    document.getElementById("sidenav").style.backgroundImage =
+      "linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%)";
   } else {
     document.getElementById("nav").style.backgroundImage = "none";
+    document.getElementById("sidenav").style.backgroundImage = "none";
   }
 }
