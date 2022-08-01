@@ -11,35 +11,60 @@
         <title>exam</title>
     </head>
     <body>
-        <div id="loader">
-            <div id="icon">
-            <lord-icon id="loader-icon"
-                src="https://cdn.lordicon.com/ggqtvqxi.json"
-                trigger="hover">
-            </lord-icon>
-            </div>
-        </div>
         <!--Topnav-->
-        <div id="nav">
-            <a href="Home">home</a>
-            <a href="About">about</a>
-            <a href="Contact">contact</a>
-        </div>
+
+            <div id="nav">
+                <h4 style=" padding-top: 1rem; padding-left: 1rem; color: white;">Jugend Repair Café</h4>
+                <a href="#AboutUs">Über uns</a>
+                <a href="#Dates">Termine</a>
+                <a href="#Contact">Kontakt</a>
+            </div>
+
         <!--Sidenav-->
         <div id="sidenav" onclick="burgerToggle()">
-            <a class="icon">
+            <a id="icon">
                 <i class="fa-solid fa-bars fa-inverse"></i>
+                <h4 style="padding-left: 1rem; color: white;">Jugend Repair Café</h4>
             </a>
             <div id="links">
-                <a href="#news">home</a>
-                <a href="#about">about</a>
-                <a href="#contact">contact</a>
+                <a href="#AboutUs">Über uns</a>
+                <a href="#Dates">Termine</a>
+                <a href="#Contact">Kontakt</a>
             </div>
         </div>
 
         <div id="banner">
+            <div id="slogan">
+            <p>Wegwerfen war gestern!</p>
+            <h4>Wir haben ein gutes Händchen für defekte Dinge. <br> Mach mit im Bernburger Repair-Café!</h4>
+            </div>
             <img src="logo" alt="logo">
-            <a href="#contact" onclick="loader()">Buchen</a>
+            <div id="button">
+            <a href="#contact" onclick="loader()" id="text-big">Buchen</a>
+            </div>
+        </div>
+        <div id="calendar">
+            <div class="date">
+                <h2>Freitag</h2>
+                <p>Bastler und Tüftlerinnen treffen sich jeden Freitag – wenn nicht gerade Feiertag ist – ab 17 Uhr in unserer Werkstatt im Jugendzentrum.</p>
+                <ul>
+                    <li>1. April 2022</li>
+                    <li>8. April 2022</li>
+                    <li>22. April 2022</li>
+                    <li>29. April 2022</li>
+                </ul>
+            </div>
+            <div class="date">
+                <h2>Samstag</h2>
+                <p>Reparaturannahme und Café sind jeden 1. Samstag im Monat geöffnet – wenn nicht gerade Feiertag ist – und zwar zwischen 15 und 17 Uhr in unserer Werkstatt im Jugendzentrum.</p>
+                <ul>
+                    <li>2. April 2022</li>
+                    <li>7. Mai 2022</li>
+                    <li>4. Juni 2022</li>
+                    <li>2. Juli 2022</li>
+                    <li>6. August 2022</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

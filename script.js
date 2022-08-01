@@ -8,12 +8,15 @@ function burgerToggle() {
   console.log(links.style.display);
 }
 
-function loader() {
-  var loader = document.getElementById("loader");
-  loader.style.display = "block";
-  console.log(loader.style.display);
-  setTimeout(function () {
-    loader.style.display = "none";
-    console.log(loader.style.display);
-  }, 1600);
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("nav").style.backgroundImage =
+      "linear-gradient(40deg, #8EC5FC 0%, #E0C3FC 100%)";
+  } else {
+    document.getElementById("nav").style.backgroundImage = "none";
+  }
 }
