@@ -84,7 +84,7 @@ hr.solid {
   
 
 #links {
-  display: block;
+  display: none;
   color: black;
 }
 
@@ -108,15 +108,18 @@ hr.solid {
 #sidenav #icon {
   display: flex;
   flex-direction: row;
-  align-items:left;
   justify-content:left;
   color:white;
+}
+
+#icon>i {
+  cursor: pointer;
 }
 
 #banner {
 background-image: url("https://picsum.photos/1920/1080");
 
-min-height: 30rem;
+min-height: 40rem;
 
 background-attachment: fixed;
 background-position: center;
@@ -267,6 +270,116 @@ text-align: center;
 .social * {
   color: #000;
 }
+
+/*Form*/
+.form {
+  width: 30rem;
+}
+
+.title {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+
+  border-radius: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #000;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #000;
+}
+
+.input:focus ~ .placeholder {
+  color: #000;
+}
+
+.submit {
+  background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
 
 
 @media screen and (max-width:720px) {
