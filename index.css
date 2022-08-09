@@ -9,7 +9,7 @@
 
 /*divider*/
 hr.solid {
-  border-top: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   margin-top: 2rem;
   margin-bottom: 2rem
@@ -246,6 +246,10 @@ text-align: center;
 .footerContent {
   width: 50rem;
   text-align: center;
+}
+
+.footerContent>hr {
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .footerContent * {
