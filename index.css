@@ -59,6 +59,9 @@ hr.solid {
     padding: 16px;
     text-decoration: none;
     font-size: 17px;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
   }
   
 
@@ -80,7 +83,7 @@ hr.solid {
   }
   
 
-#sidenav #links {
+#links {
   display: block;
   color: black;
 }
@@ -92,6 +95,9 @@ hr.solid {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
 }
 
 /* Add a grey background color on mouse-over */
