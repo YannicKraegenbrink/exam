@@ -254,7 +254,9 @@ text-align: center;
   text-align: center;
 }
 
-
+.social * {
+  color: #000;
+}
 
 
 @media screen and (max-width:720px) {
