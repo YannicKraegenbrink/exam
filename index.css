@@ -11,8 +11,8 @@
 hr.solid {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
-  margin-top: 2rem;
-  margin-bottom: 2rem
+  margin-top: 1rem;
+  margin-bottom: 1rem
 }
 
 #button {
@@ -20,7 +20,7 @@ hr.solid {
     height: 3rem;
     background-color: #74EBD5;
     background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
-
+    margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,6 +116,29 @@ hr.solid {
   cursor: pointer;
 }
 
+.parallaxdivider {
+  background-image: url("https://picsum.photos/1920/1080");
+  
+  min-height: 20rem;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 5rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  }
+
+  .parallaxdivider * {
+    color: #fff;
+    }
+
 #banner {
 background-image: url("https://picsum.photos/1920/1080");
 
@@ -131,6 +154,30 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
+}
+
+#paragraph {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+}
+
+#Text {
+  display: flex;
+  flex-direction: column;
+}
+
+#Image {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+#Image img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: auto;
 }
 
 #slogan > p {
@@ -199,6 +246,7 @@ text-align: center;
   margin-left: 2rem;
   list-style:none
 }
+
 .social-icons li
 {
   display:inline-block;
@@ -222,7 +270,7 @@ text-align: center;
   border-radius:100%;
   -webkit-transition:all .2s linear;
   -o-transition:all .2s linear;
-  transition:all .2s linear
+  transition:all .2s linear;
 }
 
 .social-icons a.facebook:hover
@@ -260,10 +308,7 @@ text-align: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.social * {
-  color: #000;
+  margin-bottom: 2rem;
 }
 
 /*Form*/
