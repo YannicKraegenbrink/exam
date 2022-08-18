@@ -71,26 +71,43 @@
         </div>
 
         <!--Form-->
-        <div class="form">
-            <div class="title">Buchung</div>
-            <div class="subtitle">Planen Sie jetzt ihren Kurs</div>
-            <div class="input-container ic1">
-                <input id="name" class="input" type="text" placeholder=" " />
-                <div class="cut"></div>
-                <label for="name" class="placeholder">Name</label>
+        <div class="center">
+            <h1>Geplanter Reparatur-Workshop</h1>
+            <p>Hier kann sich eintragen, wer das Reparieren erlernen will:</p>
+            <form>
+              <div class="inputbox">
+                <input type="text" id="Name" required="required">
+                <span>Name</span>
+              </div>
+              <div class="inputbox">
+                <input type="text" id="E-Mail" required="required">
+                <span>E-Mail</span>
+              </div>
+              <div class="inputbox">
+                <input type="text" id="Telefonnummer" required="required">
+                <span>Telefonnummer</span>
+              </div>
+              <div class="inputbox">
+                <input type="number" id="Alter" required="required">
+                <span>Alter</span>
+              </div>
+
+              <div class="inputcheckbox">
+                <span>Kursauswahl</span>
+                <div class="checkboxselect">
+                <input type="checkbox" id="Montag" name="Montag" value="Montag" required="required">
+                <label for="Montag"> Montag</label><br>
+                </div>
+                <div class="checkboxselect">
+                <input type="checkbox" id="Freitag" name="Freitag" value="Freitag" required="required">
+                <label for="Freitag"> Freitag</label><br>
+                </div>
             </div>
-            <div class="input-container ic2">
-                <input id="email" class="input" type="text" placeholder=" " />
-                <div class="cut cut-short"></div>
-                <label for="email" class="placeholder">E-Mail</label>
-            </div>
-            <div class="input-container ic2">
-                <input id="tel" class="input" type="text" placeholder=" " />
-                <div class="cut"></div>
-                <label for="tel" class="placeholder">Telefonnummer</label>
-            </div>
-            <button type="submit" class="submit">submit</button>
-        </div>
+                <div class="buttonbox">
+                <input type="button" value="Absenden" onclick=console()>
+              </div>
+            </form>
+          </div>
 
         <!--Footer-->
         <footer>

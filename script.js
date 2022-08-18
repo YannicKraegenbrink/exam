@@ -23,3 +23,7 @@ function scrollFunction() {
     document.getElementById("sidenav").style.backgroundImage = "none";
   }
 }
+
+function console() {
+  console.log("Hello World");
+}

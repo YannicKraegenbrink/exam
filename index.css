@@ -224,11 +224,6 @@ text-align: center;
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
 
 .social-icons a.facebook:hover
 {
@@ -272,113 +267,98 @@ text-align: center;
 }
 
 /*Form*/
-.form {
-  width: 30rem;
-}
-
-.title {
-  color: #000;
-  font-family: sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 30px;
-}
-
-.subtitle {
-  color: #000;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.input-container {
-  height: 50px;
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 100%;
-}
-
-.ic1 {
-  margin-top: 40px;
-}
-
-.ic2 {
-  margin-top: 30px;
-}
-
-.input {
-
-  border-radius: 12px;
-  border: 1px solid rgb(0, 0, 0);
-  box-sizing: border-box;
-  color: #eee;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-}
-
-.cut {
-  background-color: #fff;
+  padding: 50px 50px;
+  background: #fff;
   border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
 }
-
-.cut-short {
-  width: 50px;
-}
-
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
-  transform: translateY(8px);
-}
-
-.placeholder {
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid #74EBD5 ;
+  padding: 10px;
   color: #000;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
 }
-
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
-
-.input:not(:placeholder-shown) ~ .placeholder {
-  color: #000;
-}
-
-.input:focus ~ .placeholder {
-  color: #000;
-}
-
-.submit {
-  background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
+.center .inputbox {
+  position: relative;
+  width: 300px;
   height: 50px;
-  margin-top: 38px;
-  outline: 0;
-  text-align: center;
-  width: 100%;
+  margin-bottom: 50px;
+  margin: 1rem;
 }
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+
+.center .inputcheckbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 1rem;
+}
+
+.center .inputcheckbox .checkboxselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  padding: 0.5rem;
+  padding-left: 0;
+
+}
+
+.center .buttonbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin: 1rem;
+}
+
+.center .buttonbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
 
 
 
