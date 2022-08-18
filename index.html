@@ -74,17 +74,17 @@
         <div class="center">
             <h1>Geplanter Reparatur-Workshop</h1>
             <p>Hier kann sich eintragen, wer das Reparieren erlernen will:</p>
-            <form>
+            <form id="form">
               <div class="inputbox">
                 <input type="text" id="Name" required="required">
                 <span>Name</span>
               </div>
               <div class="inputbox">
-                <input type="text" id="E-Mail" required="required">
+                <input type="email" id="E-Mail" required="required">
                 <span>E-Mail</span>
               </div>
               <div class="inputbox">
-                <input type="text" id="Telefonnummer" required="required">
+                <input type="tel" id="Telefonnummer" required="required">
                 <span>Telefonnummer</span>
               </div>
               <div class="inputbox">
@@ -93,19 +93,25 @@
               </div>
 
               <div class="inputcheckbox">
-                <span>Kursauswahl</span>
+                <span>Kursauswahl:</span>
                 <div class="checkboxselect">
-                <input type="checkbox" id="Montag" name="Montag" value="Montag" required="required">
+                <input type="checkbox" id="Montag" name="Montag" value="Montag">
                 <label for="Montag"> Montag</label><br>
                 </div>
                 <div class="checkboxselect">
-                <input type="checkbox" id="Freitag" name="Freitag" value="Freitag" required="required">
+                <input type="checkbox" id="Freitag" name="Freitag" value="Freitag" >
                 <label for="Freitag"> Freitag</label><br>
                 </div>
             </div>
-                <div class="buttonbox">
-                <input type="button" value="Absenden" onclick=console()>
+            <div class="buttonbox">
+                <input type="submit" value="Absenden">
               </div>
+            <div class="inputcheckbox">       
+            <div class="checkboxselect">
+                <input type="checkbox" id="DSGVO" name="DSGVO" value="DSGVO" >
+                <label for="DSGVO" style="width: 300px"> Hiermit willige ich der Verarbeitung meiner Daten gemäß DSGVO ein</label><br>
+                </div>
+            </div>
             </form>
           </div>
 
