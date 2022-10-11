@@ -15,14 +15,16 @@ window.onscroll = function () {
 };
 
 // show bar on scroll
-const nav = document.getElementById("nav");
-const sidenav = document.getElementById("sidenav");
-
 function scrollFunction() {
-  const scrolled =
-    document.body.scrollTop > 50 || document.documentElement.scrollTop > 50;
-  nav.classList.toggle("--scrolled", scrolled);
-  sidenav.style.toggle("--scrolled", scrolled);
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("nav").style.backgroundImage =
+      "linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%)";
+    document.getElementById("sidenav").style.backgroundImage =
+      "linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%)";
+  } else {
+    document.getElementById("nav").style.backgroundImage = "none";
+    document.getElementById("sidenav").style.backgroundImage = "none";
+  }
 }
 
 // reset form
