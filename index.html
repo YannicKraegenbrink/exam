@@ -4,15 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wegwerfen war gestern!">
         <link rel="stylesheet" href="index.css">
-        <script src="script.js"></script>
-        <script src="https://kit.fontawesome.com/750afd4217.js" crossorigin="anonymous"></script>
         <title>exam</title>
     </head>
     <body>
         <!--Topnav-->
             <div id="nav">
-                <h4 style=" padding-top: 1rem; padding-left: 1rem; color: white;">Jugend Repair Café</h4>
+                <h4>Jugend Repair Café</h4>
                 <a href="#AboutUs">Über uns</a>
                 <a href="#Dates">Termine</a>
                 <a href="#Contact">Kontakt</a>
@@ -22,7 +21,7 @@
         <div id="sidenav" onclick="burgerToggle()">
             <a id="icon">
                 <i class="fa-solid fa-bars fa-inverse"></i>
-                <h4 style="padding-left: 1rem; color: white;">Jugend Repair Café</h4>
+                <h4>Jugend Repair Café</h4>
             </a>
             <div id="links">
                 <a href="#AboutUs">Über uns</a>
@@ -89,19 +88,19 @@
             <form id="form">
               <div class="inputbox">
                 <input type="text" id="Name" required="required">
-                <span>Name</span>
+                <label for="Name">Name</label>
               </div>
               <div class="inputbox">
                 <input type="email" id="E-Mail" required="required">
-                <span>E-Mail</span>
+                <label for="E-Mail">E-Mail</label>
               </div>
               <div class="inputbox">
                 <input type="tel" id="Telefonnummer" required="required">
-                <span>Telefonnummer</span>
+                <label for="Telefonnummer">Telefonnummer</label>
               </div>
               <div class="inputbox">
                 <input type="number" id="Alter" required="required">
-                <span>Alter</span>
+                <label for="Alter">Alter</label>
               </div>
 
               <div class="inputcheckbox">
@@ -138,12 +137,14 @@
                             <a href="#">Jugend-Repair-Café</a>.
                         </p>
                         <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>  
+                            <li><a class="facebook" href="#" aria-label="Read more about us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#" aria-label="Read more about us on Twitter"><i class="fa fa-twitter"></i></a></li>  
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/750afd4217.js" crossorigin="anonymous"></script>
     </body>
 </html>
